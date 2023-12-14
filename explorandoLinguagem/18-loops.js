@@ -5,7 +5,7 @@ const listaDeDestinos = ["Salvador","São Paulo","Rio de Janeiro","Curitiba","Ca
 const passagemComprada = true;
 const idadeComprador = 19;
 const estaAcompanhada = true;
-let destino = "Estados Unidos";
+let destino = "Cascavel";
 
 console.log("Lista de destinos possíveis");
 console.log(listaDeDestinos);
@@ -23,14 +23,14 @@ let destinoExiste = false;
 while(contador <= listaDeDestinos.length){
     if(listaDeDestinos[contador] == destino){
         destinoExiste = true;
-        console.log(`${destino} está disponível`);
+        console.log(`${destino} está disponível. \nBoa Viagem.`);
         break;
     }
     contador++;
 }
 
 if(destinoExiste == false){
-    console.log(`${destino} não está disponível`);
+    console.log(`Desculpe, ${destino} não está disponível.`);
 };
 
 
